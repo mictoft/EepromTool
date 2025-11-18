@@ -118,8 +118,15 @@ EepromTool/
 │   └── generate_sample_bin.py # Sample binary generator
 ├── main.py                    # Application entry point
 ├── requirements.txt           # Python dependencies
-├── README.md                  # This file
-└── PRD.md                     # Product requirements document
+│
+├── Documentation:
+├── README.md                  # This file - User quick start
+├── QUICKSTART.md              # 5-minute getting started guide
+├── PRD.md                     # Product requirements document
+├── SoftwareDoc.md             # Comprehensive software documentation
+├── TECHNICAL_GUIDE.md         # Deep technical implementation guide
+├── ARCHITECTURE.md            # System architecture and design patterns
+└── CHANGELOG.md               # Version history and changes
 ```
 
 ## Development
@@ -152,10 +159,40 @@ Ensure your header file uses the exact format with `__attribute__((__packed__))`
 ### Value out of range
 The encoder will automatically clamp values to valid ranges for the field type and display a warning.
 
+## Documentation
+
+### For Users
+- **[README.md](README.md)** (this file) - Quick start guide for end users
+- **[QUICKSTART.md](QUICKSTART.md)** - 5-minute tutorial with examples
+- **[PRD.md](PRD.md)** - Product requirements and specifications
+
+### For Developers
+- **[SoftwareDoc.md](SoftwareDoc.md)** - Comprehensive software documentation
+  - High-level overview
+  - Developer's guide
+  - System architecture & APIs
+  - Maintenance and handover plan
+- **[TECHNICAL_GUIDE.md](TECHNICAL_GUIDE.md)** - Deep technical implementation guide
+  - Module implementation details
+  - Data flow and algorithms
+  - Extension points
+  - Testing guidelines
+- **[ARCHITECTURE.md](ARCHITECTURE.md)** - System architecture
+  - Architecture patterns
+  - Component diagrams
+  - Design decisions
+  - Deployment architecture
+- **[CHANGELOG.md](CHANGELOG.md)** - Version history and release notes
+
 ## License
 
 See project documentation for license information.
 
 ## Contributing
 
-Contributions are welcome! Please ensure all changes maintain cross-platform compatibility.
+Contributions are welcome! Please ensure all changes maintain cross-platform compatibility. Before contributing:
+
+1. Read [SoftwareDoc.md](SoftwareDoc.md) for development guidelines
+2. Review [TECHNICAL_GUIDE.md](TECHNICAL_GUIDE.md) for implementation details
+3. Follow the coding standards defined in the documentation
+4. Update [CHANGELOG.md](CHANGELOG.md) with your changes
